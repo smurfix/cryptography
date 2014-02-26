@@ -75,5 +75,4 @@ setup(
     setup_requires=requirements,
 
     zip_safe=False,
-    ext_package="cryptography",
 )
