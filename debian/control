@@ -1,0 +1,31 @@
+Source: cryptography
+Maintainer: The cryptography developers <cryptography-dev@python.org>
+Section: python
+Priority: optional
+Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 7)
+Standards-Version: 3.9.1
+
+Package: python-cryptography
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: cryptography is a package designed to expose cryptographic r
+ Cryptography
+ ============
+ .
+ .. image:: https://travis-ci.org/pyca/cryptography.png?branch=master
+     :target: https://travis-ci.org/pyca/cryptography
+ .
+ .. image:: https://coveralls.io/repos/pyca/cryptography/badge.png?branch=master
+     :target: https://coveralls.io/r/pyca/cryptography?branch=master
+ .
+ .
+ ``cryptography`` is a package designed to expose cryptographic recipes and
+ primitives to Python developers.  Our goal is for it to be your "cryptographic
+ standard library". It supports Python 2.6-2.7, Python 3.2+, and PyPy.
+ .
+ ``cryptography`` includes both high level recipes, and low level interfaces to
+ common cryptographic algorithms such as symmetric ciphers, message digests and
+ key derivation functions. For example, to encrypt something with
+ ``cryptography``'s high level symmetric encryption recipe:
+ .
+ .. code-block:: pycon
