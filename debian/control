@@ -1,31 +1,33 @@
-Source: cryptography
-Maintainer: The cryptography developers <cryptography-dev@python.org>
+Source: python-cryptography
+Maintainer: Matthias Urlichs <smurf@debian.org>
 Section: python
 Priority: optional
-Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 7)
+Build-Depends: python-setuptools (>= 0.6b3), debhelper (>= 7),
+  python-dev (>= 2.6.6-3), python3-dev (>= 3.2),
+  python-cffi (>= 0.8), python3-cffi (>= 0.8),
+  python-six (>= 1.4.1), python3-six (>= 1.4.1)
 Standards-Version: 3.9.1
 
 Package: python-cryptography
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}
-Description: cryptography is a package designed to expose cryptographic r
- Cryptography
- ============
- .
- .. image:: https://travis-ci.org/pyca/cryptography.png?branch=master
-     :target: https://travis-ci.org/pyca/cryptography
- .
- .. image:: https://coveralls.io/repos/pyca/cryptography/badge.png?branch=master
-     :target: https://coveralls.io/r/pyca/cryptography?branch=master
- .
- .
- ``cryptography`` is a package designed to expose cryptographic recipes and
+Description: cryptographic recipes and primitives for Python
+ Cryptography is a package designed to expose cryptographic recipes and
  primitives to Python developers.  Our goal is for it to be your "cryptographic
  standard library". It supports Python 2.6-2.7, Python 3.2+, and PyPy.
  .
- ``cryptography`` includes both high level recipes, and low level interfaces to
+ Cryptography includes both high level recipes, and low level interfaces to
  common cryptographic algorithms such as symmetric ciphers, message digests and
- key derivation functions. For example, to encrypt something with
- ``cryptography``'s high level symmetric encryption recipe:
+ key derivation functions.
+
+Package: python3-cryptography
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: cryptographic recipes and primitives for Python
+ Cryptography is a package designed to expose cryptographic recipes and
+ primitives to Python developers.  Our goal is for it to be your "cryptographic
+ standard library". It supports Python 2.6-2.7, Python 3.2+, and PyPy.
  .
- .. code-block:: pycon
+ Cryptography includes both high level recipes, and low level interfaces to
+ common cryptographic algorithms such as symmetric ciphers, message digests and
+ key derivation functions.
